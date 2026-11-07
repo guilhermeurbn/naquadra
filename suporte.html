@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suporte & Ajuda • NaQuadra</title>
+  <style>
+    :root {
+      --bg: #0b0b0e;
+      --card: #15151a;
+      --text: #ffffff;
+      --text-muted: #8e8e93;
+      --accent: #00e676;
+      --border: rgba(255, 255, 255, 0.1);
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f2f2f7;
+        --card: #ffffff;
+        --text: #000000;
+        --text-muted: #6c6c70;
+        --border: rgba(0, 0, 0, 0.08);
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 36px 20px 60px;
+      display: flex;
+      justify-content: center;
+    }
+    .container {
+      max-width: 680px;
+      width: 100%;
+    }
+    .header {
+      margin-bottom: 28px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 20px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      background: rgba(0, 230, 118, 0.15);
+      color: var(--accent);
+      border-radius: 8px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+    .brand {
+      font-size: 2rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 6px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: var(--accent);
+    }
+    p {
+      font-size: 0.95rem;
+      color: var(--text);
+      margin-bottom: 12px;
+    }
+    .faq-item {
+      margin-bottom: 16px;
+    }
+    .faq-q {
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 4px;
+    }
+    .faq-a {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+    .contact-box {
+      background: rgba(0, 230, 118, 0.08);
+      border: 1px solid rgba(0, 230, 118, 0.25);
+      border-radius: 12px;
+      padding: 20px;
+      margin-top: 10px;
+    }
+    .contact-box a {
+      color: var(--accent);
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <span class="badge">Suporte Oficial Apple</span>
+      <h1 class="brand">Central de Suporte NaQuadra</h1>
+      <p style="color: var(--text-muted); font-size: 0.9rem;">Dúvidas frequentes, ajuda técnica e canal direto de atendimento.</p>
+    </div>
+
+    <div class="card">
+      <h2>📬 Fale Conosco</h2>
+      <p>Precisa de assistência com sua conta, problemas com votação ou dúvidas sobre escalação?</p>
+      <div class="contact-box">
+        <p>📧 Email: <a href="mailto:suporte@natrave.pt">suporte@natrave.pt</a></p>
+        <p>📱 Atendimento no WhatsApp: Disponível diretamente no botão "Ajuda & Suporte" na tela de login do app.</p>
+        <p style="margin-bottom: 0; font-size: 0.85rem; color: var(--text-muted);">Tempo médio de resposta: menos de 24 horas.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>❓ Perguntas Frequentes (FAQ)</h2>
+      <div class="faq-item">
+        <div class="faq-q">1. Como funciona o login com Apple ID?</div>
+        <div class="faq-a">Você pode vincular sua conta Apple ao seu perfil de atleta com 1 toque. Isso permite acessar suas estatísticas com Face ID sem precisar digitar senha a cada abertura.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">2. Quem pode votar na rodada?</div>
+        <div class="faq-a">Apenas atletas que participaram da rodada têm direito a voto. A urna fica aberta por 24 horas após o encerramento da partida pelo árbitro/juiz.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">3. Como é calculado o OVR (Overall)?</div>
+        <div class="faq-a">O OVR combina média ponderada de notas recebidas da comunidade, aproveitamento de vitórias, gols e regularidade de presenças ao longo da temporada.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>🔒 Links Rápidos</h2>
+      <p>• <a href="/privacidade" style="color: var(--accent); text-decoration: none; font-weight: 600;">Política de Privacidade Oficial</a></p>
+    </div>
+
+    <div class="footer">
+      <p>© 2026 NaQuadra. Todos os direitos reservados.</p>
+    </div>
+  </div>
+</body>
+</html>
+

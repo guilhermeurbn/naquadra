@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NaQuadra • Gestão Inteligente de Peladas e Futebol 5v5</title>
+  <style>
+    :root {
+      --bg: #0b0b0e;
+      --card: #15151a;
+      --text: #ffffff;
+      --text-muted: #8e8e93;
+      --accent: #00e676;
+      --border: rgba(255, 255, 255, 0.1);
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f2f2f7;
+        --card: #ffffff;
+        --text: #000000;
+        --text-muted: #6c6c70;
+        --border: rgba(0, 0, 0, 0.08);
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 40px 20px 80px;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 680px;
+      width: 100%;
+      text-align: center;
+    }
+    .badge {
+      display: inline-block;
+      padding: 6px 14px;
+      background: rgba(0, 230, 118, 0.15);
+      color: var(--accent);
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      border: 1px solid rgba(0, 230, 118, 0.3);
+    }
+    .logo-icon {
+      font-size: 3rem;
+      margin-bottom: 12px;
+      display: inline-block;
+    }
+    h1 {
+      font-size: 2.6rem;
+      font-weight: 900;
+      letter-spacing: -1px;
+      margin-bottom: 12px;
+    }
+    .subtitle {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      margin-bottom: 32px;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-bottom: 32px;
+      text-align: left;
+    }
+    @media (max-width: 520px) {
+      .cards { grid-template-columns: 1fr; }
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 24px;
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.2s, border-color 0.2s;
+      display: block;
+    }
+    .card:hover {
+      transform: translateY(-2px);
+      border-color: var(--accent);
+    }
+    .card-icon {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+    .card-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: #ffffff;
+    }
+    .card-desc {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+    .info-box {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 24px;
+      text-align: left;
+      margin-bottom: 32px;
+    }
+    .info-box h3 {
+      font-size: 1rem;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+    .info-box p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+    .info-box a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .footer {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <span class="badge">Oficial App Store</span>
+    <div class="logo-icon">⚽️</div>
+    <h1>NaQuadra</h1>
+    <p class="subtitle">Gestão inteligente de peladas, sorteio equilibrado de times, súmulas em tempo real, votações de MVP e rankings de atletas.</p>
+
+    <div class="cards">
+      <a href="suporte" class="card">
+        <div class="card-icon">🛟</div>
+        <div class="card-title">Central de Suporte</div>
+        <div class="card-desc">Canais de ajuda, perguntas frequentes sobre o app e atendimento por email.</div>
+      </a>
+
+      <a href="privacidade" class="card">
+        <div class="card-icon">🔒</div>
+        <div class="card-title">Privacidade</div>
+        <div class="card-desc">Transparência total e conformidade com Apple HIG, RGPD e Apple CloudKit.</div>
+      </a>
+    </div>
+
+    <div class="info-box">
+      <h3>Desenvolvido por Guilherme Urbano</h3>
+      <p>App nativo iOS integrado com <strong>Apple Sign-in</strong>, notificações em tempo real e armazenamento criptografado no <strong>Apple CloudKit</strong>.</p>
+      <p>Contato direto: <a href="mailto:guiurbano11@gmail.com">guiurbano11@gmail.com</a></p>
+    </div>
+
+    <div class="footer">
+      <p>© 2026 NaQuadra. Todos os direitos reservados.</p>
+    </div>
+  </div>
+</body>
+</html>
